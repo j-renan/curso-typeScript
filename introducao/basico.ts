@@ -1,4 +1,4 @@
-const a: string = 'Teste TS WEB 2.0!'
+const a: string = 'Teste TS WEB 3.0!'
 console.log(a)
 
 let elemento: any = document.getElementById('tst')
