@@ -61,3 +61,48 @@ console.log(Cor.Verde, Cor.Vermelho)
 let carro: any = 'BMW'
 console.log(carro)
 carro = { marca: 'BMW', ano: 2019 }
+console.log(carro)
+
+// funções
+function retornaMeuNome(): string {
+    return nome
+}
+
+console.log(retornaMeuNome())
+
+function digaOi(): void { // void (significa vazio) não retorna nada
+    console.log('Oi')
+    //return minhaIdade
+}
+
+digaOi()
+
+function multiplicar(numA: number, numB: number): number {
+    return numA * numB
+}
+// console.log(multiplicar(2, 'Bia'))
+console.log(multiplicar(4.7, 3))
+
+
+// tipo função
+let calculo: (numA: number, numB: number) => number
+// calculo = digaOi
+// calculo()
+calculo = multiplicar
+console.log(calculo(5, 6))
+
+
+// objetos
+let usuario: { nome: string, idade: number } = {
+    nome: 'Renan',
+    idade: 27
+}
+console.log(usuario)
+// usuario = { nome: 'Ana', idade: 27 } 
+usuario = {
+    nome: 'Maria',
+    idade: 38,
+}
+console.log(usuario)
+
+
